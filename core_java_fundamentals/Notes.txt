@@ -1,0 +1,2 @@
+Some Helpful Notes for running Java in your computer:
+1. If you are using Sublime Text Editor, https://www.codejava.net/coding/how-to-compile-and-run-a-java-program-with-sublime-text-3
