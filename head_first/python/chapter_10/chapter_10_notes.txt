@@ -1,0 +1,7 @@
+Notes:
+1. Dont store the state of the webapp in the global variables. 
+2. Using Session allows you to store the webapps state as cokkies and session ids in the web browser.
+3. def func(*args);
+	pass
+	Note: The * is specifying that args now contain a list of variables.
+	While, **kwargs accepts keyword arguments

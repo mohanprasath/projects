@@ -1,0 +1,9 @@
+Notes:
+1. Context Management Protocol - Ex; with statment manages object contexts automatically in situations like file open and close.
+2. Class = methods(a.k.a. functions) + attributes(a.k.a. variables)
+	where they represent behavior and state respectively
+3. Methods are shared between objects of the same class but not the variables
+	ie. Objects share behavior but not state
+4. NameError: Object doesn't exist or the scope is wrong
+5. __repr__ returns the canonical string representation
+   __init__ initializes the class when an object is created

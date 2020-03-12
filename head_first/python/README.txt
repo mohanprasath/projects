@@ -1,0 +1,1 @@
+This folder contains the exercises from Head First Python Edition 2. The Book is good for a beginner. Most of the exercises is easy if the learner has prior knowledge of python or other programming languages. My estimate is 14 Hours maximum to finish this book. 

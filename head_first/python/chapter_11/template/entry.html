@@ -1,0 +1,20 @@
+
+<!-- saved from url=(0062)http://python.itcarlow.ie/ed2/ch11/webapp/templates/entry.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method="POST" action="http://python.itcarlow.ie/search4">
+<p>Use this form to submit a search request:</p><table>
+
+<tbody><tr><td>Phrase:</td><td><input name="phrase" type="TEXT" width="60"></td></tr>
+<tr><td>Letters:</td><td><input name="letters" type="TEXT" value="aeiou"></td></tr>
+</tbody></table>
+<p>When you're ready, click this button:</p>
+<p><input value="Do it!" type="SUBMIT"></p>
+</form>
+
+{% endblock %}
+</body></html>

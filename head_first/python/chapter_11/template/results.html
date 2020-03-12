@@ -1,0 +1,20 @@
+
+<!-- saved from url=(0064)http://python.itcarlow.ie/ed2/ch11/webapp/templates/results.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data:</p>
+<table>
+<tbody><tr><td>Phrase:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>Letters:</td><td>{{ the_letters }}</td></tr>
+</tbody></table>
+
+<p>When "{{the_phrase }}" is searched for "{{ the_letters }}", the following 
+results are returned:</p>
+<h3>{{ the_results }}</h3>
+
+{% endblock %}
+</body></html>

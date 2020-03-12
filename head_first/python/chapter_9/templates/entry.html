@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<script type="text/javascript">
+	function alert_box(user_entry_input_id){
+		if(document.getElementById(user_entry_input_id).value == ''){
+			alert("Enter a valid phrase!");
+			return false;
+		}
+		return true;
+	}
+	function validate(){
+		return (alert_box('phrase') && alert_box('letters'));
+	}
+</script>
+
+<form method='POST' action='/search4' onsubmit="return validate()">
+<table>
+<p>Use this form to submit a search request:</p>
+<tr><td>Phrase:</td><td><input id='phrase' name='phrase' type='TEXT' value='' width='60'></td></tr>
+<tr><td>Letters:</td><td><input id='letters' name='letters' value={{the_letters}} type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>When you're ready, click this button:</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
