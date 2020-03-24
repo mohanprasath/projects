@@ -1,5 +1,5 @@
 """
-ASGI config for wordcount_project project.
+ASGI config for wordcount project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wordcount_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wordcount.settings')
 
 application = get_asgi_application()

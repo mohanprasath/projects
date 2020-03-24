@@ -1,0 +1,10 @@
+<a href="{% url 'home' %}"> Go Home </a>
+<h1>Word Count Results:</h1>
+<h3> Your Entry: </h3>{{user_entry}}
+<br/>
+<h3> The Counter Words are: </h3>
+{% for entry in word_count %}
+{{entry}}
+<br/>
+{% endfor %}
+<h3>There were {{total_words}} words in the user text.</h3>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wrod Count Project</title>
+</head>
+<body>
+<h1>Welcome to Word Count Project</h1>
+This Project is developed by <a href={% url 'author' %}>Mohan Prasath Chinnasamy</a>
+	<br/>
+<form action="{% url 'count' %}">
+	<textarea cols="40" rows="6" name="usertext"></textarea>
+	<br>
+	<input type="submit" value="Count the words" name=""/>
+</form>
+
+</body>
+</html>
